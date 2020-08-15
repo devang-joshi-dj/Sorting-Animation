@@ -1,0 +1,52 @@
+/*.center{
+	background-color: #bae3c5;
+	margin-top: 250px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 200px;
+
+}*/
+
+.emoji{
+	display: inline;
+}
+
+.emo1{
+	font-size: 90px;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 200px auto 0;
+}
+
+.emo2{
+	font-size: 100px;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 200px auto 0;
+}
+
+.emo3{
+	font-size: 110px;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 200px auto 0;
+}
+
+.emo4{
+	font-size: 120px;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 200px auto 0;
+}
+
+.emo5{
+	font-size: 130px;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 200px auto 0;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animation Sort</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+
+		  $(".emo1").click(function(){
+			$(".emo1").animate({bottom: '150px'});
+			$(".emo5").animate({top: '150px'});
+			$(".emo1").animate({left: '550px'});
+			$(".emo5").animate({right: '600px'});
+			$(".emo1").animate({bottom: '-9px'});
+			$(".emo5").animate({top: '10px'});
+			$(".emo2").animate({bottom: '150px'});
+			$(".emo2").animate({left: '300px'});
+			$(".emo4").animate({top: '150px'});
+			$(".emo4").animate({right: '275px'});
+			$(".emo3").animate({left: '20px'});
+			$(".emo2").animate({bottom: '-9px'});
+			$(".emo4").animate({top: '10px'});
+			// $(".emo1").replaceWith("<div class='emoji emo1'>&#128512;</div>");
+		  });
+
+		  $(".emo2").click(function(){
+			// $(".emo2").replaceWith("<div class='emoji emo2'>&#128512;</div>");
+		  });
+		});
+	</script>
+</head>
+<body>
+		<div class="emoji emo1">&#128530;</div>
+		<div class="emoji emo2">&#128530;</div>
+		<div class="emoji emo3">&#128530;</div>
+		<div class="emoji emo4">&#128530;</div>
+		<div class="emoji emo5">&#128530;</div>
+</body>
+</html>
