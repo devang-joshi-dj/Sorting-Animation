@@ -10,19 +10,31 @@
 		$(document).ready(function(){
 
 		  $(".emo1").click(function(){
-			$(".emo1").animate({bottom: '150px'});
-			$(".emo5").animate({top: '150px'});
-			$(".emo1").animate({left: '550px'});
-			$(".emo5").animate({right: '600px'});
-			$(".emo1").animate({bottom: '-9px'});
-			$(".emo5").animate({top: '10px'});
-			$(".emo2").animate({bottom: '150px'});
-			$(".emo2").animate({left: '300px'});
-			$(".emo4").animate({top: '150px'});
-			$(".emo4").animate({right: '275px'});
-			$(".emo3").animate({left: '20px'});
-			$(".emo2").animate({bottom: '-9px'});
-			$(".emo4").animate({top: '10px'});
+			$(".emo1").animate({bottom: '150px'}, function(){
+				$(".emo5").animate({top: '150px'}, function(){
+					$(".emo1").animate({left: '550px'}, function(){
+						$(".emo5").animate({right: '600px'}, function(){
+							$(".emo1").animate({bottom: '-9px'}, function(){
+								$(".emo5").animate({top: '10px'}, function(){
+									$(".emo2").animate({bottom: '150px'}, function(){
+										$(".emo2").animate({left: '300px'}, function(){
+											$(".emo4").animate({top: '150px'}, function(){
+												$(".emo4").animate({right: '275px'}, function(){
+													$(".emo3").animate({left: '20px'}, function(){
+														$(".emo2").animate({bottom: '-9px'}, function(){
+															$(".emo4").animate({top: '10px'});
+														});
+													});
+												});
+											});
+										});
+									});
+								});
+							});
+						});
+					});
+				});
+			});
 			// $(".emo1").replaceWith("<div class='emoji emo1'>&#128512;</div>");
 		  });
 
