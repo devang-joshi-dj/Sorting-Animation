@@ -1,94 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Animation Sort</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	
-	<script>
-		$(document).ready(function(){
-			$(".emo1").animate({top: '-150px'});
-			$(".emo2").animate({top: '+150px'});
-			$(".emo1").animate({left: '+175px'});
-			$(".emo2").animate({right: '+150px'});
-			$(".emo1").animate({top: '+0px'});
-			$(".emo2").animate({top: '-0px'}, function(){
-				$(".emo1").animate({top: '-150px'});
-				$(".emo3").animate({top: '+150px'});
-				$(".emo1").animate({left: '+340px'});
-				$(".emo3").animate({right: '+150px'});
-				$(".emo1").animate({top: '+0px'});
-				$(".emo3").animate({top: '-0px'}, function(){
-					$(".emo1").animate({top: '-150px'});
-					$(".emo4").animate({top: '+150px'});
-					$(".emo1").animate({left: '+480px'});
-					$(".emo4").animate({right: '+150px'});
-					$(".emo1").animate({top: '+0px'});
-					$(".emo4").animate({top: '-0px'}, function(){
-						$(".emo1").animate({top: '-150px'});
-						$(".emo5").animate({top: '+150px'});
-						$(".emo1").animate({left: '+620px'});
-						$(".emo5").animate({right: '+150px'});
-						$(".emo1").animate({top: '+0px'});
-						$(".emo5").animate({top: '-0px'}, function(){
-							$(".emo2").animate({top: '-150px'});
-							$(".emo3").animate({top: '+150px'});
-							$(".emo2").animate({left: '+0px'});
-							$(".emo3").animate({right: '+320px'});
-							$(".emo2").animate({top: '+0px'});
-							$(".emo3").animate({top: '-0px'}, function(){
-								$(".emo2").animate({top: '-150px'});
-								$(".emo4").animate({top: '+150px'});
-								$(".emo2").animate({left: '+150px'});
-								$(".emo4").animate({right: '+320px'});
-								$(".emo2").animate({top: '+0px'});
-								$(".emo4").animate({top: '-0px'}, function(){
-									$(".emo2").animate({top: '-150px'});
-									$(".emo5").animate({top: '+150px'});
-									$(".emo2").animate({left: '+275px'});
-									$(".emo5").animate({right: '+320px'});
-									$(".emo2").animate({top: '+0px'});
-									$(".emo5").animate({top: '-0px'}, function(){
-										$(".emo3").animate({top: '-150px'});
-										$(".emo4").animate({top: '+150px'});
-										$(".emo3").animate({right: '+175px'});
-										$(".emo4").animate({right: '+470px'});
-										$(".emo3").animate({top: '+0px'});
-										$(".emo4").animate({top: '-0px'}, function(){
-											$(".emo3").animate({top: '-150px'});
-											$(".emo5").animate({top: '+150px'});
-											$(".emo3").animate({right: '+45px'});
-											$(".emo5").animate({right: '+470px'});
-											$(".emo3").animate({top: '+0px'});
-											$(".emo5").animate({top: '-0px'}, function(){
-												$(".emo4").animate({top: '-150px'});
-												$(".emo5").animate({top: '+150px'});
-												$(".emo4").animate({right: '+340px'});
-												$(".emo5").animate({right: '+610px'});
-												$(".emo4").animate({top: '+0px'});
-												$(".emo5").animate({top: '-0px'});
-											});
-										});
-									});
-								});
-							});
-						});
-					});
-				});
-			});
-
-		 //  $(".emo2").click(function(){
-			// $(".emo2").replaceWith("<div class='emoji emo2'>&#128512;</div>");
-		 //  });
-		});
-	</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Animation</title>
+    <link rel="stylesheet" href="styles.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script> 
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 <body>
-		<div class="emoji emo1">&#128530;</div>
-		<div class="emoji emo2">&#128530;</div>
-		<div class="emoji emo3">&#128530;</div>
-		<div class="emoji emo4">&#128530;</div>
-		<div class="emoji emo5">&#128530;</div>
+    
+    <div class="center">
+        <h1>Insertion Sort Animation</h1>
+                <button class="start"><a href="#">Start Demo</a></button>
+                <button class="next"><a href="next.html">Try Yourself ➡ </a></button>
+    </div>
+
+    <div class="center">
+            <div class="main">
+                <div class="emoji emo1">&#128530;</div>
+                <div class="emoji emo2">&#128530;</div>
+                <div class="emoji emo3">&#128530;</div>
+                <div class="emoji emo4">&#128530;</div>
+                <div class="emoji emo5">&#128530;</div>
+            </div>
+        </div> 
+	</div>
+	
+	<script src="script.js"></script>
 </body>
 </html>
