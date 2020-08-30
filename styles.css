@@ -59,46 +59,29 @@ p {
 
 .emoji{
     display: inline;
+    width: 6.25em;
+	height: 6.25em;
+	position: relative;
 }
 
 .emo5{
 	font-size: 5.625em;
-	width: 6.25em;
-	height: 6.25em;
-	position: relative;
-	margin: 200px auto 0;
 }
 
 .emo4{
 	font-size: 6.25em;
-	width: 6.25em;
-	height: 6.25em;
-	position: relative;
-	margin: 200px auto 0;
 }
 
 .emo3{
 	font-size: 6.875em;
-	width: 6.25em;
-	height: 6.25em;
-	position: relative;
-	margin: 200px auto 0;
 }
 
 .emo2{
 	font-size: 7.5em;
-	width: 6.25em;
-	height: 6.25em;
-	position: relative;
-	margin: 200px auto 0;
 }
 
 .emo1{
 	font-size: 8.125em;
-	width: 6.25em;
-	height: 6.25em;
-	position: relative;
-	margin: 200px auto 0;
 }
 
 
