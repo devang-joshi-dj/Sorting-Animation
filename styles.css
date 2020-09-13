@@ -3,8 +3,7 @@
 }
 
 body {
-    background-image: linear-gradient(#fcba, #abe);
-    height: 39.5em;
+    background-color: #fcba;
 }
 
 .center {
@@ -23,13 +22,6 @@ p {
 	font-size: 20px;
 	margin: 0;
 }
-/* .container {
-	margin: 0 auto;
-    padding: 50px 150px 50px 150px;
-    border-radius: 50px;
-    background-color: cornsilk;
-    font-size: 20px;
-} */
 
 .start {
 	font-size: 30px;
@@ -62,6 +54,7 @@ p {
     width: 6.25em;
 	height: 6.25em;
 	position: relative;
+	cursor: default;
 }
 
 .emo5{
@@ -96,16 +89,4 @@ a {
   height: 11em;
   border: 1px solid black;
   display: inline-block;
-}
-
-@media (min-width: 640px) {
-
-}
-
-@media (min-width:960px) {
-
-}
-
-@media (min-width:16.25em) {
-	
 }
