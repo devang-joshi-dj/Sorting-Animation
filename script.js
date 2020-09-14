@@ -1,6 +1,6 @@
 $(document).ready(
-    $(".start").click(function(){
-
+    $(".demo").click(function(){
+        $(this).prop('disabled', true);
         $(".emo1").animate({top: '-9.375rem'});
         $(".emo2").animate({top: '+9.375rem'});
         $(".emo1").animate({left: '+10.9375rem'});
