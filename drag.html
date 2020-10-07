@@ -9,10 +9,6 @@
     <link rel="stylesheet" href="styles.css">
 
     <script>
-		$ (function() {
-			$('.emoji').draggable();
-		});
-
         function allowDrop(ev) {
             ev.preventDefault();
         }
@@ -33,24 +29,27 @@
     <div class="center">
         <h1>Try Sorting</h1>
         <button class="start"><a href="index.html">⬅ Demo</a></button>
+        <button class="reload" onclick="location.reload();" id="reload"><a href="#">Reload Page</a></button>
+        <div class="next">Steps: <b><div id="count"></div></b></div>
+        <p id="step"></p>
     </div>
 
     <div class="center">
         <div class="main">
-            <div id="div" class="container1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="div" class="container2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="div" class="container3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="div" class="container4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <div id="div" class="container5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div" class="container container1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div" class="container container2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div" class="container container3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div" class="container container4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="div" class="container container5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             <br>
-            <div class="emoji emo1" id="drag1" draggable="true" ondragstart="drag(event)">&#128530;</div>
-            <div class="emoji emo2" id="drag2" draggable="true" ondragstart="drag(event)">&#128530;</div>
-            <div class="emoji emo3" id="drag3" draggable="true" ondragstart="drag(event)">&#128530;</div>
-            <div class="emoji emo4" id="drag4" draggable="true" ondragstart="drag(event)">&#128530;</div>
-            <div class="emoji emo5" id="drag5" draggable="true" ondragstart="drag(event)">&#128530;</div>
+            <div class="emoji emo1 emodrag" id="drag1" draggable="true" ondragstart="drag(event)">&#128530;</div>
+            <div class="emoji emo2 emodrag" id="drag2" draggable="true" ondragstart="drag(event)">&#128530;</div>
+            <div class="emoji emo3 emodrag" id="drag3" draggable="true" ondragstart="drag(event)">&#128530;</div>
+            <div class="emoji emo4 emodrag" id="drag4" draggable="true" ondragstart="drag(event)">&#128530;</div>
+            <div class="emoji emo5 emodrag" id="drag5" draggable="true" ondragstart="drag(event)">&#128530;</div>
         </div>
     </div>
     
-    <script src="script.js"></script>
+    <script src="dragScript.js"></script>
 </body>
 </html>

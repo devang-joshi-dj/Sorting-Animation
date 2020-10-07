@@ -17,14 +17,19 @@ h1 {
 	margin: 0;
 	font-size: 50px;
 	color: black;
+	margin-bottom: 10px;
 }
 p {
 	font-size: 20px;
 	margin: 0;
 }
 
+#id{
+	text-align: center;
+	font-size: 10px;
+}
+
 .start {
-	font-size: 30px;
 	background-color: rgb(54, 54, 138);
 	margin-left: 10%;
     padding: 15px 15px;
@@ -33,6 +38,15 @@ p {
 	border-radius: 20px;
 	float: left;
 	display: inline-block;
+}
+
+.reload{
+	text-align: center;
+	background-color: rgb(127, 127, 176);
+    padding: 10px 10px;
+	border: none;
+	color: #fff;
+	border-radius: 20px;
 }
 
 .next {
@@ -55,6 +69,26 @@ p {
 	height: 6.25em;
 	position: relative;
 	cursor: default;
+}
+
+.emonocursor{
+	cursor: not-allowed;
+}
+.emonondrag{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.emodrag{
+	cursor: grab;
+}
+.emodrag:active{
+	cursor: -webkit-grabbing;
+	cursor: grabbing;
 }
 
 .emo5{
